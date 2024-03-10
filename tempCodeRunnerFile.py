@@ -1,0 +1,1 @@
+plt.bar(p_x,p_eu,"b",label="Europe")
