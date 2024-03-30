@@ -14,6 +14,10 @@ class Romantype{
             }
             cout<<num<<endl;
         }
+        Romantype(pRomantype &r1){
+            num=r1.num;
+            
+        }
         void convert(){
             int decimal=0;
             for(int i=0;i<num.length();i++){
@@ -43,5 +47,8 @@ class Romantype{
 int main(){
     Romantype r1;
     r1.convert();
+    Romantype r2(r1);
+    r2.convert();
+
     return 0;
 }
